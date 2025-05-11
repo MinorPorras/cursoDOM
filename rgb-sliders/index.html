@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ee">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB Sliders</title>
+    <meta
+      name="description"
+      content="RGB Sliders - A simple web page to adjust RGB values using sliders."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/icoRGB.png" type="image/png" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>RGB Sliders</h1>
+      </header>
+      <section>
+        <label for="red">Rojo (R)</label>
+        <input type="range" id="red" min="0" max="255" value="0" />
+        <span class="rgbValue">0</span>
+
+        <label for="green">Verde (G)</label>
+        <input type="range" id="green" min="0" max="255" value="0" />
+        <span class="rgbValue">0</span>
+
+        <label for="blue">Azúl (B)</label>
+        <input type="range" id="blue" min="0" max="255" value="0" />
+        <span class="rgbValue">0</span>
+      </section>
+      <p>RGB: <span id="rgbCode">rgb(0, 0, 0)</span></p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
